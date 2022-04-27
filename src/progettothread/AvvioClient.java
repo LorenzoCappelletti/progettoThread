@@ -24,6 +24,8 @@ public class AvvioClient
         try 
         {
             Client cli = new Client(InetAddress.getLocalHost(), 2000);
+            cli.scrivi("scrivo");
+            cli.leggi();
         } 
         catch (UnknownHostException ex) 
         {
